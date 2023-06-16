@@ -2,6 +2,34 @@
 
 The `TimePicker` component is a React Native component that allows selecting values for days, hours, and minutes.
 
+## Installation
+
+To use the TimePicker component in your project, follow the steps below:
+
+1. Make sure you have Node.js and npm (or yarn) installed in your development environment.
+
+2. Open the terminal and navigate to the root directory of your project.
+
+3. Run the following command to install the component via npm:
+
+```shell
+npm install react-native-modern-time-picker
+```
+
+or if you're using yarn, run:
+
+```shell
+yarn add react-native-modern-time-picker
+```
+
+4. Import the TimePicker component in your JavaScript/TypeScript file where you want to use it:
+
+```jsx
+import TimePicker from 'react-native-modern-time-picker'
+```
+
+Now you're ready to start using the TimePicker component in your project!
+
 ## Props
 
 The `TimePicker` component accepts the following props:
@@ -89,21 +117,32 @@ const styles = StyleSheet.create({
 
 export default App;
 
-´´´
+```
 
-## Contribuição
+## Contributing
 
-Contribuições são bem-vindas! Se você encontrar algum problema, tiver alguma ideia de melhoria ou desejar adicionar novos recursos ao componente `TimePicker`, fique à vontade para abrir uma nova issue ou enviar um pull request.
+Contributions are welcome! Here are some ways you can contribute to this project:
 
-Para contribuir, siga estas etapas:
+- Report bugs or suggest improvements by creating a new issue.
+- Fix bugs or implement new features by submitting a pull request.
+- Improve the documentation by suggesting changes or adding examples.
+- Help others by answering questions and providing support in the project's issue tracker.
 
-1. Faça um fork do repositório.
-2. Crie um branch para a sua contribuição: `git checkout -b minha-contribuicao`.
-3. Faça as alterações desejadas.
-4. Faça commit das suas alterações: `git commit -m "Minha contribuição"`.
-5. Envie as alterações para o repositório remoto: `git push origin minha-contribuicao`.
-6. Abra um pull request para revisão.
+To contribute to this project, follow these steps:
 
-Agradecemos antecipadamente o seu interesse em contribuir para o projeto!
+1. Fork the repository.
+2. Create a new branch for your contribution.
+3. Make the necessary changes and commit them.
+4. Push your changes to your forked repository.
+5. Submit a pull request to the original repository.
 
+Please ensure that your contributions adhere to the project's coding guidelines and follow best practices. Also, make sure to provide a clear description of your changes in the pull request.
+
+Thank you for contributing to this project!
+
+## Connect with Me and Share
+
+If you find this TimePicker component helpful, I would appreciate it if you could connect with me on LinkedIn and share your experience of using it.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/afonso-salvador/)
 

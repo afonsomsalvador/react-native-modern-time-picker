@@ -28,8 +28,8 @@ const App = () => {
         hoursValue={{totalValue: 24, textValue: 'hours'}}
         daysValue={{totalValue: 99, textValue: 'days', initialValue: 20}}
         style={{marginHorizontal: 10}}
-        dividerStyle={{fontSize: 30, fontFamily: 'Arial', color: '#000'}}
-        textValueStyle={{fontSize: 15, fontFamily: 'Arial', color: '#000'}}
+        dividerStyle={{fontSize: 30, color: '#000'}}
+        textValueStyle={{fontSize: 15, color: '#000'}}
         valueSelectedStyle={{fontSize: 32, marginVertical: -3, color: '#000', opacity: 1}}
         valueUnselectedStyle={{fontSize: 20, marginVertical: 0, color: '#000', opacity: 0.5}}
         onValuesSelected={handleValuesSelected}

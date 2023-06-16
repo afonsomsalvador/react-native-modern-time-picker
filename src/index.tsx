@@ -25,7 +25,7 @@ type Props = {
     hours: number;
     minutes: number;
   }) => void;
-}; //& (Partial<{ daysValue: { totalValue: number; textValue: string } }>);
+};
 
 const TimePicker = (props: Props) => {
   const {
@@ -39,12 +39,11 @@ const TimePicker = (props: Props) => {
     valueUnselectedStyle,
     style,
   } = props;
+
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [roundedOffset, setRoundedOffset] = useState(0);
-
-  console.log(daysValue?.initialValue);
 
   const ITEM_HEIGHT = 50;
 
@@ -55,9 +54,8 @@ const TimePicker = (props: Props) => {
   const handleScroll = (
     event: any,
     setValue: React.Dispatch<React.SetStateAction<number>>,
-    r: React.MutableRefObject<ScrollView | null>,
   ) => {
-    const {contentOffset, layoutMeasurement} = event.nativeEvent;
+    const {contentOffset} = event.nativeEvent;
     const centerIndex = Math.round(contentOffset.y / ITEM_HEIGHT);
     setValue(centerIndex);
 
@@ -119,7 +117,7 @@ const TimePicker = (props: Props) => {
                 contentContainerStyle={styles.contentContainer}
                 scrollEventThrottle={16}
                 onMomentumScrollEnd={() => scrollAlign(daysRef)}
-                onScroll={event => handleScroll(event, setDays, daysRef)}>
+                onScroll={event => handleScroll(event, setDays)}>
                 {renderItems(daysValue?.totalValue, days, daysValue?.textValue)}
               </Animated.ScrollView>
             </TouchableWithoutFeedback>
@@ -135,7 +133,7 @@ const TimePicker = (props: Props) => {
             contentContainerStyle={styles.contentContainer}
             scrollEventThrottle={16}
             onMomentumScrollEnd={() => scrollAlign(hoursRef)}
-            onScroll={event => handleScroll(event, setHours, hoursRef)}>
+            onScroll={event => handleScroll(event, setHours)}>
             {renderItems(hoursValue.totalValue, hours, hoursValue.textValue)}
           </Animated.ScrollView>
         </TouchableWithoutFeedback>
@@ -149,7 +147,7 @@ const TimePicker = (props: Props) => {
             contentContainerStyle={styles.contentContainer}
             scrollEventThrottle={16}
             onMomentumScrollEnd={() => scrollAlign(minutesRef)}
-            onScroll={event => handleScroll(event, setMinutes, minutesRef)}>
+            onScroll={event => handleScroll(event, setMinutes)}>
             {renderItems(
               minutesValue.totalValue,
               minutes,

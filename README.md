@@ -1,4 +1,4 @@
-# TimePicker Component
+# REACT-NATIVE-MODERN-TIME-PICKER
 
 The `TimePicker` component is a React Native component that allows selecting values for days, hours, and minutes.
 
@@ -36,67 +36,54 @@ The `TimePicker` component accepts the following props:
 ## Example Usage
 
 ```jsx
-import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import TimePicker from './TimePicker';
+import React, {useState} from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
+import TimePicker from './src';
 
 const App = () => {
-  const handleValuesSelected = (selectedValues) => {
-    console.log(selectedValues);
+  const [selectedValues, setSelectedValues] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+  });
+
+  const handleValuesSelected = (values: {
+    days: number;
+    hours: number;
+    minutes: number;
+  }) => {
+    setSelectedValues(values);
   };
 
   return (
     <View style={styles.container}>
       <TimePicker
-        minutesValue={{
-          totalValue: 60,
-          textValue: 'min',
-          initialValue: 30,
-        }}
-        hoursValue={{
-          totalValue: 24,
-          textValue: 'hrs',
-          initialValue: 12,
-        }}
-        daysValue={{
-          totalValue: 7,
-          textValue: 'days',
-          initialValue: 3,
-        }}
-        dividerStyle={styles.divider}
-        textValueStyle={styles.textValue}
-        valueSelectedStyle={styles.selectedValue}
-        valueUnselectedStyle={styles.unselectedValue}
-        style={styles.timePicker}
+        minutesValue={{totalValue: 60, textValue: 'min'}}
+        hoursValue={{totalValue: 24, textValue: 'hours'}}
+        daysValue={{totalValue: 99, textValue: 'days', initialValue: 20}}
+        style={{marginHorizontal: 10}}
+        dividerStyle={{fontSize: 30, color: '#000'}}
+        textValueStyle={{fontSize: 15, color: '#000'}}
+        valueSelectedStyle={{fontSize: 32, marginVertical: -3, color: '#000', opacity: 1}}
+        valueUnselectedStyle={{fontSize: 20, marginVertical: 0, color: '#000', opacity: 0.5}}
         onValuesSelected={handleValuesSelected}
       />
+      <Text>
+        Selected Values: {selectedValues.days} days, {selectedValues.hours} hours, {selectedValues.minutes} minutes
+      </Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
-  },
-  timePicker: {
-    width: 300,
-    height: 200,
-  },
-  divider: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-  textValue: {
-    fontSize: 18,
-    fontStyle: 'italic',
-  },
-  selectedValue: {
-    color: 'blue',
-  },
-  unselectedValue: {
-    color: 'gray',
+    justifyContent: 'center',
+    flex: 1,
   },
 });
 

@@ -1,7 +1,7 @@
 {
-  "name": "modernTimePicker",
-  "version": "0.0.1",
-  "private": true,
+  "name": "react-native-modern-time-picker",
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -32,5 +32,17 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "description": "",
+  "main": "src/index.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afonsomsalvador/react-native-modern-time-picker.git"
+  },
+  "author": "Afonso Salvador",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afonsomsalvador/react-native-modern-time-picker/issues"
+  },
+  "homepage": "https://github.com/afonsomsalvador/react-native-modern-time-picker#readme"
 }

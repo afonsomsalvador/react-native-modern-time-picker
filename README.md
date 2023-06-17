@@ -1,5 +1,16 @@
 # REACT-NATIVE-MODERN-TIME-PICKER
 
+<table align="right">
+   <tr>
+      <td><img src="docs/ezgif.com-crop.gif" alt="React Native Modern Time Picker" height="500px" style="margin-right:10px" /></td>
+   </tr>
+</table>
+
+<div style="position: relative;">
+   <img src="docs/ezgif.com-crop.gif" alt="React Native DateTime Picker Modal iOS" height="400px" style="margin-left:10px" />
+   <img src="docs/phone.png" alt="Phone Frame" style="position: absolute; top: 0; left: 0; height: 400px; z-index: -1;" />
+</div>
+
 The `TimePicker` component is a React Native component that allows selecting values for days, hours, and minutes.
 
 ## Installation

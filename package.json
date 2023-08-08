@@ -9,6 +9,11 @@
     "start": "react-native start",
     "test": "jest"
   },
+  "files": [
+    "src",
+    "lib",
+    "mock.js"
+  ],
   "peerDependencies": {
     "react": "18.2.0",
     "react-native": "0.71.11"

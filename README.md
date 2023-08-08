@@ -1,5 +1,5 @@
 # REACT-NATIVE-MODERN-TIME-PICKER
-
+### 🚧 We apologize for the inconvenience, but we are currently experiencing some installation issues with the library. We are working diligently to resolve this as soon as possible! 🛠️💪
 <table align="right">
    <tr>
       <td><img src="docs/ezgif.com-crop.gif" alt="React Native Modern Time Picker" height="500px" style="margin-right:10px" /></td>

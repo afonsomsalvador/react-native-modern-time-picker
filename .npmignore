@@ -1,2 +1,15 @@
-node_modules/
-npm-debug.log
+# Exclui pastas de build e configuração
+/coverage
+/node_modules
+/ios/build
+/android/build
+/lib
+
+# Mantém pastas essenciais
+!/src
+!/mock.js
+
+# Mantém arquivos essenciais
+!/tsconfig.json
+!/package.json
+!/README.md

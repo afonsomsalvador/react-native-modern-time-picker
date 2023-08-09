@@ -153,3 +153,12 @@ If you find this TimePicker component helpful, I would appreciate it if you coul
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/afonso-salvador/)
 
+## Support this package!
+
+If you like this package, consider giving it a github star ⭐
+
+<br></br>
+  <div align="center">
+    <a href="https://www.buymeacoffee.com/afonsomsalvador" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
+    </a>
+  </div>

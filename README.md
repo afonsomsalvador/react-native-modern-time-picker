@@ -155,7 +155,7 @@ If you find this TimePicker component helpful, I would appreciate it if you coul
 
 ## Support this package!
 
-If you like this package, consider giving it a github star ⭐
+If you like this package, consider giving it a github star ⭐                                                                           
 Thank you!
 <br></br>
   <div align="center">
